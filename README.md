@@ -35,25 +35,41 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-Test Cases:
+## Test Cases:
 1. Login Page Test
-Username Input Check: Ensure the user can only enter a username.
-Email Validation: Check that an error message appears when a non-existent username is entered.
-Role-based Redirection: Test login with each role (Admin, PrimeUser, RegularUser, Viewer) to ensure the correct page is rendered based on the role.
-Modal Visibility: Verify that the login modal appears if the user is not logged in and disappears after successful login.
+
+- Username Input Check: Ensure the user can only enter a username.
+
+- Email Validation: Check that an error message appears when a non-existent username is entered.
+
+- Role-based Redirection: Test login with each role (Admin, PrimeUser, RegularUser, Viewer) to ensure the correct page is rendered based on the role.
+
+- Modal Visibility: Verify that the login modal appears if the user is not logged in and disappears after successful login.
+
 2. Task List Page Test
-Task Sorting: Ensure tasks are sorted by created_at timestamp in descending order.
-Role-based Task Filtering:
+
+- Task Sorting: Ensure tasks are sorted by created_at timestamp in descending order.
+
+- Role-based Task Filtering:
 Admin should see all tasks.
 PrimeUser should see all tasks.
 RegularUser should see only their created tasks.
-Viewer should see only tasks assigned to them.
-Search Functionality:
+
+- Viewer should see only tasks assigned to them.
+
+- Search Functionality:
 Test if search works by task name, reporter name, assignee, description, etc.
-Task Filter Status: Verify if task filters (status, type) dynamically update based on available data.
-Task Count Update: Check that the task count updates correctly after applying filters.
+
+- Task Filter Status: Verify if task filters (status, type) dynamically update based on available data.
+
+- Task Count Update: Check that the task count updates correctly after applying filters.
+
 3. Role-based Rendering
-Admin Role: Ensure Admin can view the full user list and see the "Invite User" button.
-PrimeUser Role: Ensure PrimeUser can view the full user list but the "Invite User" button is disabled.
-RegularUser Role: Ensure RegularUser can only view their own information.
-Viewer Role: Ensure Viewer cannot access the task list page, and the page is disabled in the menu.
+
+- Admin Role: Ensure Admin can view the full user list and see the "Invite User" button.
+
+- PrimeUser Role: Ensure PrimeUser can view the full user list but the "Invite User" button is disabled.
+
+- RegularUser Role: Ensure RegularUser can only view their own information.
+
+- Viewer Role: Ensure Viewer cannot access the task list page, and the page is disabled in the menu.
